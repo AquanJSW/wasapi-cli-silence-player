@@ -1,9 +1,21 @@
 {
-  "version": 4,
-  "configurePresets": [
-    {
-      "name": "default",
-      "binaryDir": "${sourceDir}/build/${presetName}"
-    }
-  ]
+    "version": 4,
+    "configurePresets": [
+        {
+            "name": "default",
+            "binaryDir": "${sourceDir}/build/${presetName}"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configuration": "Debug",
+            "configurePreset": "default"
+        },
+        {
+            "name": "Release",
+            "configuration": "Release",
+            "configurePreset": "default"
+        }
+    ]
 }
